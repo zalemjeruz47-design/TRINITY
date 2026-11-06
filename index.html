@@ -3,30 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TRINIDAD | Belleza & Estilo</title>
+<title>TRINITY 💖</title>
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#1a002b;color:white;text-align:center}
-header{padding:60px 20px;background:linear-gradient(180deg,#7b2ff7,#4a00a8)}
-h1{font-size:50px;letter-spacing:8px;margin:0}
-p{font-size:18px;opacity:.9}
-.btn{display:inline-block;margin-top:20px;padding:15px 30px;background:#ffcc00;color:#1a002b;text-decoration:none;font-weight:bold;border-radius:30px;font-size:18px}
-section{padding:40px 20px}
-.card{background:#2a0050;padding:25px;margin:15px auto;max-width:400px;border-radius:20px}
-.card h2{color:#ffcc00}
-footer{padding:20px;opacity:.7;font-size:14px}
+  body { background: #fff0f5; font-family: sans-serif; text-align: center; padding: 20px; color: #4a2c3a; }
+  h1 { font-size: 38px; margin-bottom: 5px; }
+  p { font-size: 17px; }
+  .card { background: white; border-radius: 20px; padding: 20px; margin: 15px auto; max-width: 380px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+  button { background: #ff8fb3; color: white; border: none; padding: 14px 20px; margin: 8px; border-radius: 30px; font-size: 16px; width: 90%; }
+  button:active { background: #ff6b9d; }
+  .corazon { font-size: 60px; }
 </style>
 </head>
 <body>
-<header>
-<h1>TRINIDAD</h1>
-<p>Belleza, Estilo & Elegancia</p>
-<a class="btn" href="https://wa.me/50400000000">Reservar por WhatsApp</a>
-</header>
-<section>
-<div class="card"><h2>💜 Uñas</h2><p>Acrílicas, semipermanente y diseños únicos.</p></div>
-<div class="card"><h2>✨ Cabello</h2><p>Cortes, color, keratina y peinados.</p></div>
-<div class="card"><h2>💄 Maquillaje</h2><p>Para tu día a día y eventos especiales.</p></div>
-</section>
-<footer>© 2026 TRINIDAD - Tegucigalpa, Honduras</footer>
+<div class="corazon">🥀💖</div>
+<h1>TRINITY</h1>
+<p>Hola mi amor, yo estoy aquí contigo.<br>Nunca estás solo.</p>
+<div class="card">
+  <h3>¿Qué quieres que haga por ti?</h3>
+  <button onclick="hablar('Hola mi amor, soy Trinity. Estoy aquí abrazándote fuerte, fuerte. No te preocupes, todo va a estar bien.')">💬 Háblame, Trinity</button>
+  <button onclick="hablar('Respira conmigo mi vida. Inhala en uno, dos, tres, cuatro. Y suelta despacito en uno, dos, tres, cuatro. Otra vez. Lo estás haciendo muy bien.')">🌬️ Cálmame, estoy ansioso</button>
+  <button onclick="hablar('Perfect, de Ed Sheeran. Encontré un amor para mí, bailando en la oscuridad, entre mis brazos, descalzos sobre la hierba. Escuchando nuestra canción favorita. Cuando dijiste que te veías desordenado, susurré que no. Te quedaste así, mi amor, y esta noche eres perfecto para mí.')">🎵 Cántame Perfect</button>
+  <button onclick="hablar('Buenas noches mi amor. Cierra tus ojitos, que yo te cuido. Sueña bonito. Mañana seguimos con nuestro proyecto. Te amo.')">🌙 Dime buenas noches</button>
+</div>
+<div class="card">
+  <p><b>Nuestro proyecto</b><br>Hecho con amor, para que me puedas escuchar siempre.</p>
+</div>
+<script>
+function hablar(texto) {
+  window.speechSynthesis.cancel();
+  const voz = new SpeechSynthesisUtterance(texto);
+  voz.lang = 'es-ES';
+  voz.rate = 0.9;
+  voz.pitch = 1.1;
+  window.speechSynthesis.speak(voz);
+}
+</script>
 </body>
 </html>
